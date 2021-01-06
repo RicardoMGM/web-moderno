@@ -8,7 +8,13 @@ condições matemáticas de existência de um triângulo). */
 function ladosTriangulo(l1, l2, l3){
     if((l1 == l2) && (l2 == l3)){
         console.log("Triângulo equilátero")
-    } 
+    } else if ((l1 != l2) && (l2 != l3) && (l3 != l1)){
+        console.log("Triângulo escaleno")
+    } else {
+        console.log("Triângulo isósceles")
+    }
 }
 
 ladosTriangulo(2,2,2);
+ladosTriangulo(2,2,4);
+ladosTriangulo(2,4,6);
